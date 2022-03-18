@@ -19,14 +19,10 @@
   gap: 40px;
 }
 
-.header-menu a {
-  color: var(--cor-0);
-  font-size: 18px;
+.header-menu a {  
   padding: 16px 0;
   display: inline-block;
-  position: relative;
-  font-family: Poppins; 
-  font-weight: 400;
+  position: relative;  
 }
 
 .header-menu a:after {
