@@ -52,3 +52,25 @@
   height: 4px;
   color: currentColor;
 }
+
+/* Titutlos internas */
+.titulo-bg {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: var(--cor-11);
+}
+
+.titulo p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .titulo-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;    
+  }
+  .titulo {
+    font-size: 1rem;
+  }
+}
+

@@ -31,6 +31,10 @@
   margin-top: 16px;
 }
 
+.footer-informacoes li {
+  margin-bottom: 16px;
+}
+
 .footer-redes {
   display: flex;
   gap: 40px;
