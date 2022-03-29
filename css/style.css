@@ -35,4 +35,7 @@
 @import "./termos/termos.css";
 
 /* Orcamento */
-@import "./orcamento/orcamento.css"
+@import "./orcamento/orcamento.css";
+
+/* Plugins */
+@import "../js/plugins/simple-anime.css";

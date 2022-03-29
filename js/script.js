@@ -15,8 +15,7 @@ links.forEach(ativarLink);
 // CHECKAR PRODUTO NO ORCAMENTO
 const parametros = new URLSearchParams(location.search);
 
-parametros.forEach(parametro => {
-  console.log(parametro);
+parametros.forEach(parametro => {  
   const elemento = document.getElementById(parametro);
   console.log(elemento);
   if (elemento){
@@ -38,8 +37,6 @@ function ativarPergunta(event) {
   const ativo = resposta.classList.contains("ativo");
 
   pergunta.setAttribute("aria-expanded", ativo)
-   
-  console.log(pergunta);
 }
 
 function adicionaEventoPerguntas(pergunta) {
@@ -52,8 +49,6 @@ perguntas.forEach(adicionaEventoPerguntas)
 
 const bicicletas = document.querySelectorAll('.bicicleta-imagens img');
 const galeria = document.querySelector(".bicicleta-imagens");
-
-console.log(galeria.firstElementChild)
 
 function trocarImagem(event){
   const bicicleta = event.currentTarget;    
@@ -69,3 +64,9 @@ function adicionarEventoImagens(bicicleta) {
 }
 
 bicicletas.forEach(adicionarEventoImagens);
+
+// Plugin: SimpleAnime
+
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}
