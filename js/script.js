@@ -23,3 +23,28 @@ parametros.forEach(parametro => {
     elemento.checked = true;
   }  
 })
+
+// PERGUNTAS FREQUENTES
+
+const perguntas = document.querySelectorAll(".perguntas button");
+
+function ativarPergunta(event) {
+  const pergunta = event.currentTarget;
+  const controls = pergunta.getAttribute("aria-controls");
+  const resposta = document.getElementById(controls)
+  
+  resposta.classList.toggle("ativo");  
+  
+  const ativo = resposta.classList.contains("ativo");
+
+  pergunta.setAttribute("aria-expanded", ativo)
+   
+  console.log(pergunta);
+}
+
+function adicionaEventoPerguntas(pergunta) {
+  pergunta.addEventListener('click', ativarPergunta )
+}
+
+perguntas.forEach(adicionaEventoPerguntas)
+
